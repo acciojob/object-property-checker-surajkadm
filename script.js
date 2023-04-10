@@ -1,12 +1,18 @@
 const sampleObject = { red: "#FF0000", green: "#00FF00", white: "#FFFFFF" };
 
 function hasKey(key) {
-   for (let i = 0; i < sampleObject.length; i++) {
-        if(sampleObject[i]===key){
-            return true
+
+var isKey;
+   for (let i in sampleObject) {
+        if(i==key){
+            isKey=true;
+            console.log("in if stat");
+            break;
         }
-	   return false
+        console.log("in for stat");
+	   isKey=false
     } 
+ return isKey;
 }
 
 // Do not change the code below
