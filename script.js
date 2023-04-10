@@ -6,10 +6,10 @@ var isKey;
    for (let i in sampleObject) {
         if(i==key){
             isKey=true;
-            console.log("in if stat");
+            
             break;
         }
-        console.log("in for stat");
+        
 	   isKey=false
     } 
  return isKey;
